@@ -31,6 +31,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Favicon using Font Awesome -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M504 256c0 136.97-111.03 248-248 248S8 392.97 8 256 119.03 8 256 8s248 111.03 248 248zm-120-76c0-6.63-5.37-12-12-12h-56v-56c0-6.63-5.37-12-12-12h-56v56c0 6.63 5.37 12 12 12h56v56c0 6.63 5.37 12 12 12h56v56c0 6.63 5.37 12 12 12h56v-56h-56v-56zm-60 56h-56v-56h56v56zm120 0h-56v-56h56v56zm-248 56h56v-56h-56v56z'%3E%3C/path%3E%3C/svg%3E" />
+</head>
   </head>
   <body>
     <!-- Header -->
@@ -57,19 +61,25 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Services</a>
+                <a class="nav-link" aria-disabled="true" href="#services"
+                  >Services</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Contact</a>
+                <a class="nav-link" aria-disabled="true" href="#contact"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
@@ -77,6 +87,7 @@
       </nav>
       <!-- hero -->
       <div
+        id="home"
         class="hero img-fluid text-light d-flex flex-column align-items-center justify-content-center text-center px-2"
       >
         <h1 class="fw-bold">Welcome to Fashion Style</h1>
@@ -86,7 +97,7 @@
     </header>
 
     <!-- About us section -->
-    <section class="container-md py-5">
+    <section id="about" class="container-md py-5">
       <div class="row">
         <div class="col-12 col-sm-6">
           <img
@@ -115,7 +126,7 @@
     </section>
 
     <!-- Pricing section -->
-    <section class="bg-body-tertiary py-5">
+    <section id="pricing" class="bg-body-tertiary py-5">
       <div class="container">
         <h3 class="text-center fw-semibold pb-2">Our pricing</h3>
         <!-- 1 -->
@@ -267,7 +278,7 @@
     </section>
 
     <!-- Services -->
-    <section class="container pt-5">
+    <section id="services" class="container pt-5">
       <div class="text-center">
         <h3 class="fw-semibold text-uppercase">Services</h3>
         <p>Lorem ipsum dolor sit amet.</p>
@@ -381,7 +392,7 @@
     </section>
 
     <!-- Contact us section -->
-    <section class="bg-body-tertiary py-5">
+    <section id="contact" class="bg-body-tertiary py-5">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6">

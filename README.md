@@ -15,7 +15,7 @@ This project was built using the Bootstrap framework to practice its features an
 
 ## Live Demo
 
-You can view the live version of this project here: [Simple Bootstrap Page](https://klimentina2709.github.io/Templates/Bootstrap_Page)
+You can view the live version of this project here: [Simple Bootstrap Page](https://klimentina2709.github.io/Templates/Bootstrap_Page/)
 
 ## Getting Started
 

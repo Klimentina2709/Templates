@@ -3,30 +3,20 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
       - Bootstrap_Page
       - Responsive_Template
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14" # or any version you need
-
-      - name: Build project
-        run: |
-          echo "No build step needed for static HTML/CSS"
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ # Deploy from the root directory
-          publish_branch: gh-pages # Optional: Change this if you want to deploy to a specific branch
+          publish_dir: ./ # Adjust this if necessary
+          publish_branch: gh-pages

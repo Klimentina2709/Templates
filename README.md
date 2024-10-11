@@ -12,12 +12,6 @@ This project showcases the use of HTML for structure and SCSS for styling and la
 - Clean and simple design
 - Optimized for mobile, tablet, and desktop views
 
-## Live Demo
-
-You can view the live version of this project here: [Simple Responsive Template](https://klimentina2709.github.io/Templates/)
-
-## Getting Started
-
 ### Prerequisites:
 
 - Basic knowledge of HTML and CSS

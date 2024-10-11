@@ -1,0 +1,42 @@
+@use "../../src/css/abstracts/mixins" as mix;
+@use "../../src/css/abstracts/variables" as var;
+@use "sass:math";
+
+.placesContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  .placeImage {
+    flex-basis: 33.333%;
+    position: relative;
+
+    @media (max-width: 1024px) {
+      flex-basis: 50%;
+    }
+    @media (max-width: 768px) {
+      flex-basis: 100%;
+    }
+
+    & img {
+      filter: brightness(0.5);
+      min-width: 100%;
+      height: auto;
+      background-color: aquamarine;
+    }
+  }
+
+  h3 {
+    font-size: var.$gutter-base * 1.5;
+  }
+
+  .placeText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+@use "../../src/css/abstracts/mixins" as mix;
+@use "../../src/css/abstracts/variables" as var;
+@use "sass:math";
+
+.sectionBlock {
+  display: flex;
+  @extend %section;
+  @extend %wrap;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .paragraphPart {
+    flex-grow: 1;
+    padding-right: var.$gutter-base;
+
+    h2 {
+      margin-top: math.div(var.$gutter-base, 4);
+    }
+
+    span {
+      text-transform: uppercase;
+      color: var.$text-color-secondary;
+      font-size: larger;
+    }
+  }
+
+  .imagePart {
+    & .image {
+      border-radius: 50%;
+    }
+  }
+}

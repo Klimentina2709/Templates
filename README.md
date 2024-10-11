@@ -13,12 +13,6 @@ This project was built using the Bootstrap framework to practice its features an
 - Basic buttons
 - Styled text and images
 
-## Live Demo
-
-You can view the live version of this project here: [Simple Bootstrap Page](https://klimentina2709.github.io/Templates/Bootstrap_Page/)
-
-## Getting Started
-
 ### Prerequisites:
 
 - A basic understanding of HTML and CSS

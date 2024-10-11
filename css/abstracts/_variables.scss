@@ -1,0 +1,35 @@
+@use "sass:math";
+
+@function rem-calc($size) {
+  @return (math.div($size, 16)) * 1rem;
+}
+
+// Font settings
+$font-family-base: "Open Sans", sans-serif;
+
+$font-size-small: rem-calc(11);
+$font-size-base: rem-calc(16);
+$font-size-medium: rem-calc(22);
+
+$heading-size-small: rem-calc(28);
+$heading-size-big: rem-calc(44);
+
+$line-height-base: 1.5;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Size settings
+$gutter-base: rem-calc(30);
+
+// Color settings
+$text-color-base:#414A4F;
+$text-color-primary: #FFFFFF;
+$text-color-secondary: #cfcece;
+
+$background-color-secondary: #2792E6;
+$background-color-tertiary: #F7F7F7;
+$background-color-dark: #414A4F;
+
+$hover-color: #47a6f0;
+$hover-links:  #d7dadb;

@@ -1,0 +1,61 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+body {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-normal;
+  line-height: var.$line-height-base;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: math.div(var.$gutter-base, 2);
+  font-weight: var.$font-weight-bold;
+}
+
+a {
+  text-decoration: none;
+  color: var.$text-color-primary;
+}
+
+button {
+  text-transform: uppercase;
+  color: var.$text-color-primary;
+  background-color: var.$background-color-secondary;
+  border: none;
+  font-size: var.$font-size-small;
+  font-weight: bold;
+  padding: (math.div(var.$gutter-base, 2.5)) var.$gutter-base;
+
+  &:hover {
+    background-color: var.$hover-color;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: var.$font-size-base;
+    padding: (math.div(var.$gutter-base, 1.5)) (var.$gutter-base * 1.5);
+    margin-bottom:math.div(var.$gutter-base, 3);
+  }
+}
+
+.introduction {
+  text-align: center;
+  color: var.$text-color-base;
+  font-size: var.$font-size-small;
+  @include mix.center(40%);
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+
+  p {
+    margin-bottom: math.div(var.$gutter-base, 1.5);
+  }
+
+  .bottom-line {
+    border: 1.5px solid var.$background-color-secondary;
+    @include mix.center(20%);
+  }
+}

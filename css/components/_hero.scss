@@ -1,0 +1,89 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+header {
+  position: relative;
+  height: 100vh;
+
+  .hero-section {
+    background: linear-gradient(rgba(69, 69, 73, 0.7), rgba(59, 59, 59, 0.7)),
+      url("../img/hero.jpg");
+    background-size: 100% 130%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    @media screen and (max-width: 768px) {
+      background-position: left;
+      background-size: 130% 100%;
+    }
+  }
+
+  nav {
+    padding-top: math.div(var.$gutter-base, 1.5);
+    padding-bottom: math.div(var.$gutter-base, 1.5);
+    @extend %wrap;
+    font-size: var.$font-size-base;
+    display: flex;
+    justify-content: space-between;
+
+
+    @media screen and (max-width: 768px) {
+      font-size: var.$font-size-medium;
+    }
+
+
+    @media screen and (max-width: 425px) {
+      flex-direction: column;
+      text-align: center;
+
+      & > a {
+        font-size: var.$font-size-medium * 1.5;
+      }
+    }
+
+    ul {
+      display: flex;
+      margin-bottom: 0;
+      padding: 0;
+
+      @media screen and (max-width: 425px) {
+        justify-content: center;
+        margin-top: math.div(var.$gutter-base, 2);
+      }
+    }
+
+    li {
+      margin-right: math.div(var.$gutter-base, 2);
+      list-style-type: none;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 64px);
+    color: var.$text-color-primary;
+
+    @media screen and (max-width: 768px) {
+      font-size: var.$font-size-medium;
+      text-align: center;
+      height: calc(100vh - 73px);
+    }
+
+    @media screen and (max-width: 425px) {
+      height: calc(100vh - 137.5px);
+    }
+  }
+}

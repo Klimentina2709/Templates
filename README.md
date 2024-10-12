@@ -8,7 +8,7 @@ Below is a list of all the branches in this repository, each containing a unique
 
 1. **[Company_Landing_Page](https://github.com/klimentina2709/Templates/tree/Company_Landing_Page)**
 
-   - A simple landing page for a company, built using HTML and CSS. This template focuses on creating a professional layout with a clean design.
+   - A simple landing page for a company, built using HTML and TailwindCSS. This template focuses on creating a professional layout with a clean design.
 
 2. **[Bakery_Page](https://github.com/klimentina2709/Templates/tree/Bakery_Page)**
 

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Landing Page</title>
+    <!-- Include TailwindCSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-gray-900 text-white">
+    <div class="container mx-auto py-8">
+      <!-- Hero Section -->
+      <section
+        class="relative bg-cover bg-center"
+        style="background-image: url('./images/hero.jpg')"
+      >
+        <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+        <div class="container mx-auto text-center relative py-32">
+          <h1 class="text-4xl font-bold mb-4">Welcome to Our Company</h1>
+          <p class="text-lg mb-8">Explore our premium products and services</p>
+          <a
+            href="#"
+            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg"
+            >Learn More</a
+          >
+        </div>
+      </section>
+
+      <!-- Product Features Section -->
+      <section class="my-12">
+        <h2 class="text-2xl font-bold mb-4">Our Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="p-6 bg-gray-800 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">Product Name 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              vehicula interdum diam, sed maximus lectus dapibus ut.
+            </p>
+          </div>
+          <div class="p-6 bg-gray-800 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">Product Name 2</h3>
+            <p>
+              Quisque varius felis nec mauris tincidunt, eu efficitur sem
+              tempor. Curabitur scelerisque lacus in nunc dictum luctus.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cars Section -->
+      <section class="my-12">
+        <h2 class="text-2xl font-bold mb-4">Featured Cars</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-md">
+            <img
+              src="./images/1.jpg"
+              alt="Car"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Car Model 1</h3>
+              <p class="text-gray-400">Price: $30,000</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                vehicula interdum diam, sed maximus lectus dapibus ut.
+              </p>
+              <a
+                href="#"
+                class="block mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-md">
+            <img
+              src="./images/2.jpg"
+              alt="Car"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Car Model 2</h3>
+              <p class="text-gray-400">Price: $25,000</p>
+              <p>
+                Quisque varius felis nec mauris tincidunt, eu efficitur sem
+                tempor. Curabitur scelerisque lacus in nunc dictum luctus.
+              </p>
+              <a
+                href="#"
+                class="block mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-md">
+            <img
+              src="./images/3.jpg"
+              alt="Car"
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Car Model 3</h3>
+              <p class="text-gray-400">Price: $35,000</p>
+              <p>
+                Integer ut purus sit amet arcu pretium vestibulum. Fusce ac
+                purus id tortor varius ullamcorper. Curabitur scelerisque lacus
+                in nunc dictum luctus.
+              </p>
+              <a
+                href="#"
+                class="block mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="my-12">
+        <h2 class="text-2xl font-bold mb-4">Testimonials</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="p-6 bg-gray-800 rounded-lg">
+            <div class="mb-4">
+              <blockquote class="italic text-lg">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                convallis libero quis eros convallis, sed lobortis risus
+                ullamcorper."
+              </blockquote>
+              <footer class="text-gray-400">John Doe, Client</footer>
+            </div>
+          </div>
+          <div class="p-6 bg-gray-800 rounded-lg">
+            <div class="mb-4">
+              <blockquote class="italic text-lg">
+                "Suspendisse vitae felis ac ligula posuere condimentum. Integer
+                ut purus sit amet arcu pretium vestibulum."
+              </blockquote>
+              <footer class="text-gray-400">Jane Smith, Client</footer>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Us Section -->
+      <section class="my-12">
+        <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="p-6 bg-gray-800 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">Get in Touch</h3>
+            <form>
+              <div class="mb-4">
+                <label for="name" class="block text-sm font-medium">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input mt-1 w-full rounded-md bg-gray-700 text-white"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-sm font-medium"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input mt-1 w-full rounded-md bg-gray-700 text-white"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block text-sm font-medium"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="form-textarea mt-1 w-full rounded-md bg-gray-700 text-white"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="p-6 bg-gray-800 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">Contact Information</h3>
+            <p>123 Business St, New York, NY 10001</p>
+            <p>Email: info@example.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="text-center py-4 border-t border-gray-700">
+        <div class="flex justify-center space-x-4 mb-4">
+          <a
+            href="#"
+            class="text-gray-500 hover:text-white transition-colors duration-300"
+            >Privacy Policy</a
+          >
+          <a
+            href="#"
+            class="text-gray-500 hover:text-white transition-colors duration-300"
+            >Terms of Service</a
+          >
+          <a
+            href="#"
+            class="text-gray-500 hover:text-white transition-colors duration-300"
+            >Contact Us</a
+          >
+        </div>
+        <p>
+          &copy; 2024 Company Name | Built with
+          <a href="https://tailwindcss.com/" class="underline">TailwindCSS</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

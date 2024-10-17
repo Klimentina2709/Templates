@@ -1,6 +1,6 @@
 # Templates
 
-This repository contains a collection of simple web page templates I created when I first started learning web development. Each template helped me understand different aspects of design and development, using various technologies such as **HTML**, **CSS**, **Bootstrap**, **SCSS**, and **React**. These projects showcase different design concepts, from basic responsive layouts to more advanced techniques.
+This repository contains a collection of simple web page templates I created when I first started learning web development. Each template helped me understand different aspects of design and development, using various technologies such as **HTML**, **CSS**, **Bootstrap**, **SCSS**, **TailwindCSS** and **React**. These projects showcase different design concepts, from basic responsive layouts to more advanced techniques.
 
 ## Branches and Templates
 
